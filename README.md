@@ -3,18 +3,18 @@
  
 
 
-  <h1 align="center">React Starterkit</h1>
+  <h1 align="center">Pdf Arama Uygulaması</h1>
 
   <p align="center">
 <p>
     <br />
-    <a href="https://github.com/muhammeddeniz/react-starterkit"><strong>Proje Dosyalarını İncele</strong></a>
+    <a href="https://github.com/muhammeddeniz/pdf-arama"><strong>Proje Dosyalarını İncele</strong></a>
     <br />
     <br />
    <p>
-    <a href="https://github.com/muhammeddeniz/react-starterkit/issues">Hata Bildir!</a>
+    <a href="https://github.com/muhammeddeniz/pdf-arama/issues">Hata Bildir!</a>
     <p>
-    <a href="https://github.com/muhammeddeniz/react-starterkit/issues">Tavsiyeler</a>
+    <a href="https://github.com/muhammeddeniz/pdf-arama/issues">Tavsiyeler</a>
   </p>
 </p>
 
@@ -75,6 +75,6 @@ Muhammed DENİZ - [@twitter](https://twitter.com/muhammeddenz) - muhammeddenizcs
 
 
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/muhammeddeniz/react-starterkit/issues
+[issues-url]: https://github.com/muhammeddeniz/pdf-arama/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/muhammeddeniz/react-starterkit/master/LICENSE.txt
+[license-url]: https://github.com/muhammeddeniz/pdf-arama/master/LICENSE.txt
