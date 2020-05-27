@@ -58,7 +58,7 @@ yarn
 
 ```sh
 yarn
-yarn start
+yarn dev
 ```
 
 http://localhost:3000/ adresinden projeye ulaşabilirsiniz 
