@@ -1,0 +1,32 @@
+.card{
+   margin: 20px;
+   padding: 20px;
+   color: #000;
+    border: 0px; 
+    transition: box-shadow .6s ease-out;
+    box-shadow: .1px .9px 3px rgba(117, 117, 117, 0.534);
+    cursor: pointer;
+
+    &:hover{
+        box-shadow: 1px 8px 10px rgba(128, 128, 128, 0.562);
+        transition:  box-shadow .1s ease-in;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    &-baslik{
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+    &-buttons{
+        display: flex;
+    }
+    .btn-right{
+        margin-left: 20px;
+    }
+}
+
+ 

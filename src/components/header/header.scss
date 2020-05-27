@@ -1,0 +1,65 @@
+@import "../../styles/index.scss";
+
+header {
+  display: flex;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+ 
+  padding-right: 20px;
+  padding-left: 40px;
+  
+  border-radius: 20px;
+  border: 1px solid #dfe1e5;
+
+  .logo{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      h3{
+        color:#22d1ee;
+        font-size: 19px;
+
+        span{
+        color: #1e2a78;
+
+        }
+      }
+  }
+
+  &:hover{
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+  }
+
+  nav {
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    a {
+      text-decoration: none;
+      color: rgb(78, 78, 78);
+      padding-left: 25px;
+ 
+     
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 16px;
+
+      &:hover{
+      color: black;
+
+      }
+    }
+  }
+}
+
+
+.myBody{
+  font-size: 15px;
+  max-width: 1400px;
+  margin: auto;
+}

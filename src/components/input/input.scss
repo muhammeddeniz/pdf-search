@@ -1,0 +1,60 @@
+@import "../../styles/index.scss";
+
+.input {
+  outline: none;
+
+  p {
+    font-family: $font-family-medium;
+
+    margin-bottom: 6px;
+    padding-left: 2px;
+  }
+  input[type="text"] {
+    background: #ffffff;
+
+    border: 1px solid $silver-2;
+    box-sizing: border-box;
+
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    height: 32px;
+    width: 320px;
+    padding: 5px 15px 5px;
+
+    font-family: $font-family-regular;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &-primary {
+    input[type="text"] {
+      border: 1px solid $silver-2;
+
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &-secondary {
+    input[type="text"] {
+      border: 1px solid $pink-1;
+
+      box-shadow: 0px 1px 5px $pink-3;
+    }
+  }
+
+  &-aqua {
+    input[type="text"] {
+      border: 1px solid $aqua-1;
+
+      box-shadow: 0px 1px 5px $aqua-3;
+    }
+  }
+
+  &-green {
+    input[type="text"] {
+      border: 1px solid $green-1;
+
+      box-shadow: 0px 1px 5px $green-3;
+    }
+  }
+}
