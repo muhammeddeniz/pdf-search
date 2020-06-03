@@ -3,75 +3,47 @@
  
 
 
-  <h1 align="center">Pdf Arama Uygulaması</h1>
-
-  <p align="center">
-<p>
-    <br />
-    <a href="https://github.com/muhammeddeniz/pdf-arama"><strong>Proje Dosyalarını İncele</strong></a>
-    <br />
+  <h1 align="center">Pdf Search</h1>
     <br />
    <p>
-    <a href="https://github.com/muhammeddeniz/pdf-arama/issues">Hata Bildir!</a>
-    <p>
-    <a href="https://github.com/muhammeddeniz/pdf-arama/issues">Tavsiyeler</a>
-  </p>
+    <a href="https://github.com/muhammeddeniz/pdf-arama/issues">Report Error!</a>
 </p>
+<br />
+<br />
+<br />
 
 
  
-## İçerikler
-
-* [Proje Hakkında](#proje-hakkında)
-* [Gerekli Paketler](#gerekli-paketler)
-* [Kurulum](#kurulum)
-* [Geliştirme](#geliştirme)
-* [Lisans](#lisans)
-* [Lisans](#lisans)
-* [iletişim](#iletişim)
 
 
 <!-- ABOUT THE PROJECT -->
-## Proje Hakkında
+## ABOUT THE PROJECT
 </br>
 </br>
 </br>
 
-### Gerekli Paketler
-
-* [Next.js](https://nextjs.org/)
-* [React](https://reactjs.org/)
-* [Mobx](https://mobx.js.org/README.html)
-
-### Kurulum
+### Setup
  
-1. Projeyi Klonlayın
+
 ```sh
 git clone https://github.com/muhammeddeniz/react-starterkit.git
-```
-2. Yarn Paketlerini İndirin
-```sh
+
 yarn
 ```
 
-## Geliştirme 
+## Development
 
 ```sh
 yarn
 yarn dev
 ```
 
-http://localhost:3000/ adresinden projeye ulaşabilirsiniz 
+http://localhost:3000/ 
 
 
-## Lisans
+## License
 
 `MIT LICENSE`
-
-
-## iletişim 
-
-Muhammed DENİZ - [@twitter](https://twitter.com/muhammeddenz) - muhammeddenizcs@gmial.com
 
 
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
