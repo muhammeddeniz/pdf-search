@@ -27,7 +27,7 @@ const HomePage: React.FC<any> = () => {
             amount: 0,
           },
         },
-      
+
         imageLinks: {
           smallThumbnail: "",
           thumbnail: "",
@@ -79,7 +79,7 @@ const HomePage: React.FC<any> = () => {
             fetchData();
           }}
         >
-          Ara
+          Search
         </Button>
       </div>
 

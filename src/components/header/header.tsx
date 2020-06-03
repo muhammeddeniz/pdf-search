@@ -10,7 +10,9 @@ const Header: React.FC<IProps> = ({ store }) => {
   return (
     <header>
       <div className="logo">
-        <h3><span>PDF</span>-Ara</h3>
+        <h3>
+          <span>PDF</span>-Search
+        </h3>
         {/* <img src="/static/logo.svg" alt="" /> */}
         {/* görüntü dosyalarını public/static içine koyup buradan yol verirken direk staticten başlayabilirsin */}
       </div>

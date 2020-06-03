@@ -1,32 +1,72 @@
-.card{
-   margin: 20px;
-   padding: 20px;
-   color: #000;
-    border: 0px; 
-    transition: box-shadow .6s ease-out;
-    box-shadow: .1px .9px 3px rgba(117, 117, 117, 0.534);
-    cursor: pointer;
+.card {
+  margin: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 
-    &:hover{
-        box-shadow: 1px 8px 10px rgba(128, 128, 128, 0.562);
-        transition:  box-shadow .1s ease-in;
-    }
+  position: relative;
 
-    img{
-        width: 100%;
-    }
+  color: #000;
+  border: 0px;
+  border-radius: 8px;
+  transition: box-shadow 0.6s ease-out;
+  box-shadow: 0.1px 0.9px 3px rgba(117, 117, 117, 0.534);
+  cursor: pointer;
 
-    &-baslik{
-        font-size: 18px;
-        font-weight: bold;
-        color: black;
-    }
-    &-buttons{
-        display: flex;
-    }
-    .btn-right{
-        margin-left: 20px;
-    }
+  &:hover {
+    box-shadow: 1px 8px 10px rgba(128, 128, 128, 0.562);
+    transition: box-shadow 0.1s ease-in;
+  }
+
+  img {
+    width: 80%;
+    border-radius: 6px;
+    border: 2px solid;
+  }
+
+  &-sayfa {
+    font-size: 13px;
+    color: black;
+
+    font-family: "Signika", sans-serif;
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  &-baslik {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    margin-right: auto;
+    font-family: "Signika", sans-serif;
+    width: 300px;
+  }
+
+  &-author {
+    margin-top: 0;
+    font-family: "Signika", sans-serif;
+    margin-right: auto;
+    color: rgb(71, 71, 71);
+
+    margin-bottom: 20px;
+  }
+
+  &-yayinevi {
+    font-family: "Signika", sans-serif;
+    margin: auto;
+    color: black;
+    margin-top: 15px;
+    text-transform: capitalize;
+  }
+
+  &-buttons {
+    display: flex;
+    margin-top: 20px;
+  }
+  .btn-right {
+    margin-left: 20px;
+  }
 }
-
- 

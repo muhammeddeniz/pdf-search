@@ -2,13 +2,12 @@ import React from "react";
 import App from "next/app";
 import Head from "next/head";
 
-import Store from '../store/store';
-import { observer } from 'mobx-react';
+import Store from "../store/store";
+import { observer } from "mobx-react";
 
 import "../styles/index.scss";
 
 import { Header, Footer } from "../components";
-
 
 const store = new Store();
 
@@ -20,18 +19,21 @@ class MyApp extends App {
       <>
         <Head>
           <meta charSet="utf-8" />
-          <link rel="shortcut icon" href="/logo192.png" />
-          <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+          <link rel="shortcut icon" href="/Component 1.svg" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+          ></meta>
 
           <meta name="Description" content="Author: Muhammed Deniz"></meta>
 
-          <title>Ana Sayfa</title>
+          <title>Pdf Search</title>
         </Head>
-        
+
         <Header />
-          <div className='myBody' lang="tr">
-            <Component {...pageProps} mystore={store}/>
-          </div>
+        <div className="myBody" lang="tr">
+          <Component {...pageProps} mystore={store} />
+        </div>
         {/* <Footer /> */}
       </>
     );
