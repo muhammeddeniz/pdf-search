@@ -39,24 +39,31 @@ const Card: React.FC<IProps> = ({ index }) => {
   return (
     <div className="card">
       <div key={index.id} className="homePage-content-items">
-        <p className="card-sayfa">{index.volumeInfo.pageCount} sf.</p>
+        <Link
+          href="/books/[...slug]"
+          as={`/books/${index.id}/${index.volumeInfo.title}`}
+        >
+          <a>
+            <p className="card-sayfa">{index.volumeInfo.pageCount} sf.</p>
 
-        <p className="card-baslik">{index.volumeInfo.title}</p>
-        <p className="card-author">
-          {index.volumeInfo.authors?.map((i: any) => i)}
-          {!index.volumeInfo.authors ? "unknown" : ""}
-        </p>
-        <img
-          className="homePage-content-items-img"
-          src={
-            index.volumeInfo.imageLinks
-              ? index.volumeInfo.imageLinks.smallThumbnail
-              : " "
-          }
-          alt=""
-        />
+            <p className="card-baslik">{index.volumeInfo.title}</p>
+            <p className="card-author">
+              {index.volumeInfo.authors?.map((i: any) => i)}
+              {!index.volumeInfo.authors ? "unknown" : ""}
+            </p>
+            <img
+              className="homePage-content-items-img"
+              src={
+                index.volumeInfo.imageLinks
+                  ? index.volumeInfo.imageLinks.smallThumbnail
+                  : " "
+              }
+              alt=""
+            />
 
-        <p className="card-yayinevi">{index.volumeInfo.publisher}</p>
+            <p className="card-yayinevi">{index.volumeInfo.publisher}</p>
+          </a>
+        </Link>
 
         {/* <p>{index.volumeInfo.description}</p> */}
         <div className="card-buttons">
