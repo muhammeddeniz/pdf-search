@@ -4,7 +4,7 @@ import Link from "next//link";
 import "./card.scss";
 import { Button } from "../button";
 
-interface IProps {
+type IProps = JSX.IntrinsicElements["div"] & {
   store?: any;
   index?: any;
   id?: string;
@@ -33,11 +33,11 @@ interface IProps {
       thumbnail: string;
     };
   };
-}
+};
 
-const Card: React.FC<IProps> = ({ index }) => {
+const Card: React.FC<IProps> = ({ index, ...rest }) => {
   return (
-    <div className="card">
+    <div className="card" {...rest}>
       <div key={index.id} className="homePage-content-items">
         <Link
           href="/books/[...slug]"

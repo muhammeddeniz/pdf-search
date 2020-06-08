@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Button, Input, Card } from "../components";
+import { observer } from "mobx-react";
 
-const HomePage: React.FC<any> = () => {
+interface IProps {
+  mystore?: any;
+}
+
+const HomePage: React.FC<IProps> = ({ mystore }) => {
   const [query, setQuery] = useState("default");
   const [load, setLoad] = useState(true);
   const [firstLoad, setFirstLoad] = useState(true);
@@ -88,7 +93,14 @@ const HomePage: React.FC<any> = () => {
           {!firstLoad ? (
             text ? (
               text.map((index) => {
-                return <Card index={index} />;
+                return (
+                  <Card
+                    onClick={() => {
+                      mystore.getData(index.volumeInfo);
+                    }}
+                    index={index}
+                  />
+                );
               })
             ) : (
               <div className="cantFind">
@@ -104,4 +116,4 @@ const HomePage: React.FC<any> = () => {
   );
 };
 
-export default HomePage;
+export default observer(HomePage);
