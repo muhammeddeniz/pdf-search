@@ -20,7 +20,15 @@ const Slug: React.FC<IProps> = ({ mystore }) => {
 
   const [a, seta] = useState([]);
 
-  return <div>{mystore.currenPage}</div>;
+  return (
+    <div>
+      <h1>{mystore.data.title}</h1>
+      <h1>{mystore.data.authors}</h1>
+      <h1>{mystore.data.pageCount}</h1>
+      <h1>{mystore.data.language}</h1>
+      <img src={mystore.data.smallThumbnail} alt="" />
+    </div>
+  );
 };
 
 export default observer(Slug);

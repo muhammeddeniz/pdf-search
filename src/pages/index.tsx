@@ -96,7 +96,13 @@ const HomePage: React.FC<IProps> = ({ mystore }) => {
                 return (
                   <Card
                     onClick={() => {
-                      mystore.getData(index.volumeInfo);
+                      mystore?.getData(
+                        index.volumeInfo.title,
+                        index.volumeInfo.authors[0],
+                        index.volumeInfo.pageCount,
+                        index.volumeInfo.language,
+                        index.volumeInfo.imageLinks.medium
+                      );
                     }}
                     index={index}
                   />
